@@ -1,0 +1,194 @@
+/* Here is the custom css */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Old+Standard+TT&display=swap');
+
+/* Main headers : font-family: 'Old Standard TT', serif;
+The rest font-family: 'Cormorant Garamond', serif; */
+
+:root {
+    --grey: #8787877b;
+    --white: #fbfdfb;
+    --green: #99B898;
+    --skin:  #FECEAB;
+    --pink: #FF847C;
+    --red: #E84A5F;
+    --black: #2A363B;
+}
+
+* {
+    font-family: 'Cormorant Garamond', serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: auto;
+}
+
+body {
+    background-color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Old Standard TT', serif;
+}
+
+.wrapper-container {
+    margin: 0;
+    padding: 0;
+}
+
+.accordion-button::after {
+    color: var(--red);
+}
+
+.accordion-button:focus{
+    border-color: none;
+    box-shadow: none;
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-green {
+    background-color: var(--green);
+    border-color: var(--green);
+}
+
+.bg-green:hover{
+    background-color: var(--red);
+    border-color: var(--red);
+}
+
+.bg-green:focus{
+    background-color: var(--green);
+    border-color: var(--green);
+    box-shadow: none;
+}
+
+.logo {
+    width: 5rem;
+}
+
+.nav-item a {
+    font-size: 1.5rem;
+}
+
+/* Header Image  */
+
+.header {
+    position: relative;
+}
+
+.caption {
+    color: var(--white);
+    position: absolute;
+    margin: 0;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Parallax effect start */
+.wrapper {
+    height: 50vh;
+    
+}
+
+.parallax-img {
+    background-image: url(./images/header.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+/* .parallax-img::after{
+    font-size: 6rem;
+    content: "White Hill leather";
+    font-family: 'Old Standard TT', serif;
+    color: white;
+    z-index: 1000;
+    color: var(--white);
+    position: absolute;
+    margin: 0;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+} */
+
+/* Parallax effect end */
+
+img {
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* Restyling the buttons from carousel */
+
+.carousel button {
+    border: none;
+    background: transparent;
+}
+
+.card-img-top {
+    object-fit: cover;
+}
+
+form {
+    background-color: #FFFFFF;
+}
+
+
+/* Footer */
+
+.footer {
+    height: 100px;
+    position: static;
+    bottom: 0;
+    border-top: 2px solid var(--green);
+}
+
+.footer-fixed-bottom {
+    position: absolute;
+    height: 100px;
+    bottom: 0;
+    border-top: 2px solid var(--green);
+    bottom: 0;
+    left: 0;
+}
+
+i {
+    font-size: 2rem;
+    padding-left: 15px;
+}
+
+i:hover {
+    color: var(--red);
+}
+
+
+.form-check-input:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem var(--grey);
+  }
+.form-check-input:checked {
+    background-color: var(--red);
+    border-color: var(--red);
+  }
+
+  .img-about {
+      width: 30rem;
+  }
